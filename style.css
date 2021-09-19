@@ -1,12 +1,13 @@
 body{
     background-color: rgb(145, 157, 169);
     max-width: max-content;
+    width: 100%;
 }
 main{
     display: flex;
     margin-block-start: 20%;
     /* max-width: max-content; */
-    margin-left: 29%;
+    margin-left: 20%;
 }
 
 .couleur-a{
