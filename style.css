@@ -1,22 +1,26 @@
 body{
     background-color: rgb(145, 157, 169);
-    max-width: max-content;
+    /* max-width: max-content; */
     width: 100%;
+    /* display: block; */
 }
 main{
-    display: flex;
-    margin-block-start: 20%;
-    /* max-width: max-content; */
-    margin-left: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5px;
+    margin-top: 7%;
+    justify-content: center;
+    /* -webkit-box-reflect: below -15px linear-gradient(to bottom, rgba(61, 60, 60, 0),
+     rgba(49, 48, 48, 0.4)); */
+    
 }
 
-.couleur-a{
+ .couleur-a{
     background-color: rgb(135, 238, 247);
     width: 300px;
     height: 250px;
     border-radius: 7px;
     margin-top: -16px;
-    margin-right: 3px;
     margin-bottom: 3px;
 }
 
@@ -25,7 +29,6 @@ main{
     width: 300px;
     height: 320px;
     border-radius: 7px;
-    margin-right: 3px;
 }
 
 .couleur-c{
@@ -41,31 +44,31 @@ main{
     width: 500px;
     height: 250px;
     border-radius: 7px;
-    margin-left: 5px;
     margin-bottom: 3px;
-    /* margin-top: -30px; */
+     /* margin-top: 0px;  */
 }
+
 .couleur-d img{
     margin-top: 5%;
     margin-left: -13%;
     border-radius: 100%;
 }
+
 .entete{
     height: 0px;
 }
 
 .couleur-e{
     background-image: url("images/images.jfif");
-    background-repeat: no-repeat;
+    background-size: cover;
     width: 250px;
     height: 320px;
     border-radius: 7px;
-    margin-left: 5px;
 }
 
 .couleur-f{
     background-image: url("images/images\ \(1\).jfif");
-    background-repeat: no-repeat;
+    background-size: cover;
     width: 250px;
     height: 320px;
     border-radius: 7px;
@@ -90,15 +93,18 @@ main{
    margin-top: 60px;
    margin-left: 30px;
 }
+
 #muet{
     position: relative;
     left: 10px;
     bottom: 20px;
 }
+
 .meteo{
     margin-left: 30px;
     margin-bottom: 50px;
 }
+
 .couleur-b p{
     margin-left: 30px;
     font-size: 22px;
@@ -110,18 +116,22 @@ main{
     margin-top: 0px;
     font-size: 36px;
 }
+
 .couleur-c p{
     font-size: 22px;
     margin-left: 30px;
 }
+
 #small{
     font-size: 14px;
 }
+
 .couleur-e p{
     font-size: 25px;
     margin-left: 30px;
     margin-top: 90%;
 }
+
 .couleur-f p{
     font-size: 34px;
     margin-left: 30px;
@@ -140,12 +150,11 @@ figure img{
 
 .right img{
     position: relative;
-    bottom: 68%;
     left: 18%;
 }
+
 button{
     position: relative;
-    bottom: 65%;
     right: 25%;
     width: 120px;
     height: 50px;
@@ -153,6 +162,12 @@ button{
     border-radius: 25px;
     background-color: whitesmoke;
     cursor: pointer;
+}
+
+.local{
+    height: 0;
+    position: relative;
+    bottom: 68%;
 }
 
 .couleur-d h1{
@@ -164,6 +179,65 @@ button{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* @media All (max-width: 320px){
+/* @media only screen and (max-width: 360px){
+    main{
+        display: grid;
+        grid-template-columns: none;
+        grid-column-gap: 5px;
+        margin-top: 7%;
+    }
+    .couleur-a{
+       margin-left: 20%;
+       margin-right: -30%;
+       width: 250px;
+    }
+    .couleur-b{
+        margin-left: 20%;
+        margin-right: -30%;
+        width: 250px;
+     }
+     .couleur-c{
+        margin-left: 20%;
+        margin-right: -30%;
+        width: 250px;
+     }
+
+     .couleur-d{
+        margin-left: 20%;
+        margin-right: -30%;
+        width: 250px;
+     }
+     .couleur-e{
+        margin-left: 20%;
+        margin-right: -30%;
+        width: 250px;
+     }
+     .couleur-f{
+        margin-left: 20%;
+        margin-right: -30%;
+        width: 250px;
+     }
+     .right img{
+        position: relative;
+        left: 18%;
+        width: 120px;
+        height: 100px;
+    }
     
-} */
+    button{
+        position: relative;
+        right: 25%;
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+        border-radius: 25px;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+    
+    .local{
+        height: 0;
+        position: relative;
+        bottom: 48%;
+    } */
+} 
